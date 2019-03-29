@@ -3,34 +3,25 @@ package com.sesung.himart;
 public class HimartView {
 	//오버로딩
 
-	public void view(Tv tv) {
-		System.out.println("Brand : "+ tv.getBrand());
-		System.out.println("Color : "+ tv.getColor());
-		System.out.println("Inch : "+ tv.getInch());
-		System.out.println("Price : "+ tv.getPrice());
-		System.out.println("Point : " + tv.getPoint());
+	public void view(Electronic electronic) {
+		System.out.println("Brand : "+ electronic.getBrand());
+		System.out.println("Color : "+ electronic.getColor());
+		System.out.println("Price : "+ electronic.getPrice());
+		System.out.println("Point : " + electronic.getPoint());
 		System.out.println("=========================");
+		
+		if(electronic instanceof Tv) {
+			Tv tv=(Tv)electronic;
+			System.out.println(tv.getInch());
+		}else if(electronic instanceof Computer) {
+			Computer computer = (Computer)electronic;
+		}else {
+			Handphone handphone = (Handphone)electronic;
+		}
 	}
 
-	public void view(Handphone handphone) {
-		System.out.println("Name : "+ handphone.getName());
-		System.out.println("Brand : "+ handphone.getBrand());
-		System.out.println("Color : "+ handphone.getColor());
-		System.out.println("Inch : "+ handphone.getInch());
-		System.out.println("Price : "+ handphone.getPrice());
-		System.out.println("Point : " + handphone.getPoint());
-		System.out.println("=========================");
-	}
 
-	public void view(Computer computer) {
-		System.out.println("Brand : "+ computer.getBrand());
-		System.out.println("용     량 : "+computer.getCc());
-		System.out.println("Cpu : " + computer.getCc());
-		System.out.println("Color : "+ computer.getColor());
-		System.out.println("Price : "+ computer.getPrice());
-		System.out.println("Point : " + computer.getPoint());
-		System.out.println("=========================");
-	}
+
 
 	public void view(Tv [] tvs) {
 		for(int i =0; i<tvs.length; i++) {

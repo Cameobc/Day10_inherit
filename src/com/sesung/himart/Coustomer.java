@@ -12,10 +12,10 @@ public class Coustomer {
 	//buy, 매개변수 1개
 	//계산 후 잔액과 포인트 출력
 	public void buy(Electronic electronic) {
-		price = price-electronic.getPrice();
-		System.out.println("현재 잔액 : "+price);
-		point = point+electronic.getPoint();
-		System.out.println("현재 포인트 : "+point);
+		this.price = this.price-electronic.getPrice();
+		System.out.println("현재 잔액 : "+this.price);
+		this.point = this.point+electronic.getPoint();
+		System.out.println("현재 포인트 : "+this.point);
 	}
 	
 //	public void buy(Computer computer) {

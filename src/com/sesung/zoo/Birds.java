@@ -3,8 +3,6 @@ package com.sesung.zoo;
 public abstract class Birds extends Animal{
 	private String wing;
 	
-	public abstract void fly();
-	
 	public Birds() {}
 	
 	public Birds(String wing) {

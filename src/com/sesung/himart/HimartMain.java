@@ -5,21 +5,22 @@ public class HimartMain {
 		Tv tv = new Tv();
 		Computer computer = new Computer();
 		Handphone handphone = new Handphone();
-		HimartView vi = new HimartView();
-		Coustomer su = new Coustomer();
-		Electronic p = tv;
+		Electronic [] electronics = new Electronic[3];
+		electronics[0]=tv;
+		electronics[1]=handphone;
+		electronics[2]=computer;
 		
-		System.out.println(((Tv)p).getInch());
-		
-		p = new Electronic();
-		System.out.println(((Tv)p).getInch());
-		
-		System.out.println(p.getBrand());
-		System.out.println(p.getPrice());
-		su.buy(handphone);
-		su.buy(computer);
-		su.buy(tv);
-
+//		HimartView vi = new HimartView();
+//		Coustomer su = new Coustomer();
+//		Electronic p = tv;
+//		System.out.println(((Tv)p).getInch());
+//		p = new Electronic();
+//		System.out.println(((Tv)p).getInch());
+//		System.out.println(p.getBrand());
+//		System.out.println(p.getPrice());
+//		su.buy(handphone);
+//		su.buy(computer);
+//		su.buy(tv);
 //		Tv [] tvs = new Tv[3];
 //		tvs[0] = new Tv();
 //		tvs[1] = new Tv();

@@ -13,11 +13,11 @@ public class Tazo extends Birds{
 		super.getAge(); //부모의 getAge를 가리키며 딱히 쓸 일은 없음.
 	}
 	
-	@Override
-	public void fly() {
-		System.out.println("파닥파닥");
+//	@Override
+//	public void fly() {
+//		System.out.println("파닥파닥");
 		
-	}
+//	}
 	
 	@Override
 	public void eat() {
